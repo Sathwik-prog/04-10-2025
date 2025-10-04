@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #11998e, #38ef7d);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h2>Sum of Natural Numbers</h2>
+  <p id="result"></p>
+
+  <script>
+    var sum = 0;
+    var i = 1;
+    var text = "";
+
+    while (i <= 10) {   // natural numbers 1 to 10
+      sum += i;
+      text += i;          // add the number to text
+      if (i < 10) {
+        text += " + ";    // add plus sign until last number
+      }
+      i++;
+    }
+
+    text += " = " + sum;
+
+    document.getElementById("result").innerHTML = "The sum of first 10 natural numbers is:<br>" + text;
+  </script>
+</body>
+</html>
