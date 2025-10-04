@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Print Random Numbers</title>
+</head>
+<body style="text-align:center; font-family:Arial; background:linear-gradient(to right, lightblue, pink);">
+
+  <h1>Random Numbers</h1>
+  <p id="result"></p>
+
+  <script>
+    let i = 1;
+    let text = "";
+
+    while (i <= 5) {
+      let num = Math.floor(Math.random() * 10) + 1; // random number 1–10
+      text += "Random number " + i + " is " + num + "<br>";
+      i++;
+    }
+
+    document.getElementById("result").innerHTML = text;
+  </script>
+
+</body>
+</html>
